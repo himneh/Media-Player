@@ -1,0 +1,36 @@
+﻿<Page x:Class="Media_Player.LandingPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Media_Player"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="LandingPage">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Border Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" Background="White">
+            <StackPanel VerticalAlignment="Center">
+                <TextBlock Text="FIT | HCMUS | Media Player" Foreground="#FF6A6AE2" Style="{StaticResource TitleText}" />
+                <StackPanel Margin="00,0,0,0" VerticalAlignment="Center">
+                    <TextBlock TextAlignment="Left" Text="Subject: Window Programming" Opacity="0.8" Margin="20 30 20 0" Style="{StaticResource NormalText}" />
+                    <TextBlock TextAlignment="Left" Text="Lecturer: Trần Duy Quang" Opacity="0.8" Margin="20 0 20 20" Style="{StaticResource NormalText}" />
+                    <TextBlock TextAlignment="Left" Text="Đàm Hồng Đức - 19120481" Opacity="0.8" Margin="20 0 20 0" Style="{StaticResource NormalText}" />
+                    <TextBlock TextAlignment="Left" Text="Đặng Phương Nam - 19120591" Opacity="0.8" Margin="20 0 20 0" Style="{StaticResource NormalText}" />
+                    <TextBlock TextAlignment="Left" Text="Nguyễn Hoàng Nam - 19120595" Opacity="0.8" Margin="20 0 20 0" Style="{StaticResource NormalText}" />
+                    <TextBlock TextAlignment="Left" Text="Lê Thái Bình Minh - 19120583" Opacity="0.8" Margin="20 0 20 0" Style="{StaticResource NormalText}" />
+                </StackPanel>
+
+                <Button  Content="About us" Background="#FF484872" Style="{StaticResource button2}" Click="AboutUs_Click" />
+            </StackPanel>
+        </Border>
+    </Grid>
+</Page>
